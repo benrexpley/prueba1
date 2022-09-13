@@ -1,0 +1,31 @@
+<section>
+  <fieldset>
+
+    <label for="">Rut :</label>
+    <input type="text" name="rut" [value]="nuevoHistorial.rut" (input)="cambiarRut($event)">
+    <br><br>
+    <label for="">Nombre :</label>
+    <input type="text"
+    name="nombre"
+    [value]="nuevoHistorial.nombre"
+    (input)="cambiarNombre($event)">
+    <br><br>
+    <label for="">Apellido :</label>
+    <input type="text" name="apellido"
+    [value]="nuevoHistorial.apellido"
+    (input)="cambiarApellido($event)">
+    <br><br>
+    <label for="">Edad :</label>
+    <input type="text" name="edad"
+    [value]="nuevoHistorial.edad"
+    (input)="cambiarEdad($event)">
+    <br><br>
+    <label for="">Seccion :</label>
+    <input type="text" name="seccion"
+    [value]="nuevoHistorial.seccion"
+    (input)="cambiarSeccion($event)">
+  </fieldset>
+  <fieldset>
+    <button type="button" role="button" (click)="guardarHistorial()" >Guardar</button>
+  </fieldset>
+</section>
